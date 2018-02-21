@@ -163,8 +163,8 @@ func (c *IotHubHTTPClient) buildSasToken(uri string) string {
 func (c *IotHubHTTPClient) performRequest(method string, uri string, data string) (string, string) {
 	token := c.buildSasToken(uri)
 	log.Printf("%s https://%s\n", method, uri)
+	log.Printf(data)
 	req, _ := http.NewRequest(method, "https://"+uri, bytes.NewBufferString(data))
-	log.Println(data)
 
 	req.Header.Set("Content-Type", "application/json")
 	req.Header.Set("User-Agent", "golang-iot-client")

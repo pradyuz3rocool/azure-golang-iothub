@@ -1,4 +1,4 @@
-export GOOS?=linux
+export GOOS?=darwin
 export GOARCH?=amd64
 export BINARY?=client
 

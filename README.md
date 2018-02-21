@@ -1,6 +1,6 @@
 # azure-golang-iot-hub
 
-Experimental (minimalistic) Azure IoT Hub client in Go (HTTPS only)
+(minimalistic) Azure IoT Hub client in Go (HTTPS only)
 
 ## TODO
 
@@ -11,6 +11,7 @@ Experimental (minimalistic) Azure IoT Hub client in Go (HTTPS only)
 + [x] Support both named and unnamed (`DeviceId`) connection strings
 * [x] Refactor as library
 * [ ] Implement AMQP client
+* [ ] Implement MQTT client
 
 ## HOWTO
 
@@ -22,7 +23,7 @@ make run
 or...
 
 ```bash
-export CONNECTION_STRING='HostName=myhub.azure-devices.net;DeviceId=testdevice;SharedAccessKey=SxiN78h8tdN3yQXMBhmV193ZxKWBHhmJptGcvheA3dg='
+export CONNECTION_STRING='HostName=HomeAutoHub.azure-devices.net;DeviceId=raspi-isteer;SharedAccessKey=U4AsC9dtTnmvlMNCLe6MRs9f6kyRZsAqW9Y748OQPA0='
 make run
 ```
 
