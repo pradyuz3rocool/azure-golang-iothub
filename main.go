@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"os"
 )
@@ -37,9 +36,9 @@ func main() {
 		resp, status := client.GetDeviceID(client.deviceID)
 
 		log.Printf("%s, %s\n\n", resp, status)
-		for i := 0; i < 10; i++ {
-			resp, status = client.SendMessage(fmt.Sprintf(`{"count":%d}`, i))
-			log.Printf("%s, %s\n\n", resp, status)
-		}
+		// for i := 0; i < 10; i++ {
+		// 	resp, status = client.SendMessage(fmt.Sprintf(`{"count":%d}`, i))
+		// 	log.Printf("%s, %s\n\n", resp, status)
+		// }
 	}
 }

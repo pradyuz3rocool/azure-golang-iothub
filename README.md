@@ -16,7 +16,7 @@
 ## HOWTO
 
 ```bash
-export CONNECTION_STRING='HostName=myhub.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=SxiN78h8tdN3yQXMBhmV193ZxKWBHhmJptGcvheA3dg='
+export CONNECTION_STRING='HostName=HomeAutoHub.azure-devices.net;DeviceId=raspi;SharedAccessKey=IHx8ac6Bad4vHbv4I0HiJkhgeCNZhuzQdnllCAMSR+o='
 make run
 ```
 
